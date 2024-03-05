@@ -1,0 +1,24 @@
+###create author
+post http://localhost:4000/author-api/user
+Content-Type: application/json
+
+
+{
+    "userType":"author",
+    "username":"vikas",
+    "password":"vikas",
+    "email":"vikas@mail.com"
+}
+
+
+###login author
+post http://localhost:4000/author-api/login
+Content-Type: application/json
+
+
+{
+    "userType":"author",
+    "username":"vikas",
+    "password":"vikas"   
+}
+
